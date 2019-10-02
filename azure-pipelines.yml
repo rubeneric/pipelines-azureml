@@ -18,8 +18,7 @@ steps:
   inputs:
     azureSubscription: 'build-demo'
     scriptLocation: inlineScript
-    inlineScript: 'az ml folder attach -w demoworkspace
- -g demoworkspace'
+    inlineScript: 'az ml folder attach -w demoworkspace -g demoworkspace'
 
 - task: AzureCLI@1
   displayName: 'Create compute for training'
